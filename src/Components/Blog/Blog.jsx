@@ -1,10 +1,10 @@
 import React from 'react';
-import './Blog.css';
+import Card from "../Card/Card";
 
 const Blog = () => {
   return (
     <div className='grid portfoliogrid'>
-
+      <Card />
     </div>
   );
 };

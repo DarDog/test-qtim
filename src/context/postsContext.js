@@ -1,11 +1,9 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useEffect } from 'react';
 import { mockupApi } from "../utils/Mockup";
 
 export const PostsContext = createContext([]);
 
 export const PostsProvider = ({ children }) => {
-  const [currentPost, setCurrentPost] = useState({})
-
   useEffect(() => {
     mockupApi.getPosts()
       .then(posts => {

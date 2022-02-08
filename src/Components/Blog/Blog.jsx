@@ -3,7 +3,9 @@ import './Blog.css';
 
 const Blog = () => {
   return (
-    <></>
+    <div className='grid portfoliogrid'>
+
+    </div>
   );
 };
 

@@ -6,8 +6,8 @@ import { usePosts } from "../../hooks/usePosts";
 const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const { getPostsByCurrentPage } = usePosts();
-  const posts = getPostsByCurrentPage(currentPage);
 
+  const posts = getPostsByCurrentPage(currentPage);
 
   const handleChangePage = (newPage) => {
     setCurrentPage(newPage)

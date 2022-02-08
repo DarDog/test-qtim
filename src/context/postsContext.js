@@ -1,13 +1,15 @@
-import React, { createContext, useEffect } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 import { mockupApi } from "../utils/Mockup";
 
 export const PostsContext = createContext([]);
 
 export const PostsProvider = ({ children }) => {
+  const [posts, setPosts] = useState([]);
+
   useEffect(() => {
     mockupApi.getPosts()
       .then(posts => {
-        localStorage.setItem('posts', JSON.stringify(posts))
+        setPosts(posts)
       })
       .catch(err => {
         console.error(err)
@@ -15,7 +17,6 @@ export const PostsProvider = ({ children }) => {
   }, []);
 
   const getPostsByCurrentPage = (currentPage) => {
-    const posts = JSON.parse(localStorage.getItem('posts'));
     const sliceStart = ( currentPage - 1 ) * 6;
     const lastMovieIndex = currentPage * 6;
 
@@ -26,7 +27,7 @@ export const PostsProvider = ({ children }) => {
     return mockupApi.getPostById(postId)
   }
 
-  const value = { getCurrentPost, getPostsByCurrentPage }
+  const value = { getCurrentPost, getPostsByCurrentPage, posts }
 
   return (
     <PostsContext.Provider value={ value }>

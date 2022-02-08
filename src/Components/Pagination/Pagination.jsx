@@ -1,4 +1,5 @@
 import React from 'react';
+import { usePosts } from "../../hooks/usePosts";
 
 const Pagination = ({ onChange, currentPage }) => {
   const showNextPage = () => {
@@ -9,7 +10,9 @@ const Pagination = ({ onChange, currentPage }) => {
     onChange(currentPage - 1)
   }
 
-  const maxPages = Math.ceil(JSON.parse(localStorage.getItem('posts')).length / 6);
+  const { posts } = usePosts();
+
+  const maxPages = Math.ceil(posts.length / 6);
 
   return (
     <nav className='pagination'>

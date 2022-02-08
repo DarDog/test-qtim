@@ -22,3 +22,10 @@
   url('./fonts/herr_von_muellerhoff_regular.ttf') format('truetype'),
   url('./fonts/herr_von_muellerhoff_regular.svg#herr_von_muellerhoff_regular') format('svg');
 }
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('./fonts/Oswaldbold.woff2') format('woff2'), url('./fonts/Oswaldbold.woff') format('woff'), url('./fonts/Oswaldbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

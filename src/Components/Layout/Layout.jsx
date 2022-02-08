@@ -9,11 +9,7 @@ const Layout = () => {
       <div className='container'>
         <Header/>
         <div className='site-content'>
-          <div className='content-area column full'>
-            <main className='site-main'>
-              { <Outlet /> }
-            </main>
-          </div>
+          { <Outlet /> }
         </div>
       </div>
       <Footer/>

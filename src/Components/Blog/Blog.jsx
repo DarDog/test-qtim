@@ -14,14 +14,16 @@ const Blog = () => {
   }
 
   return (
-    <>
-      <div className='grid portfoliogrid posts'>
-        { posts.map(post => {
-          return ( <Card key={ post.id } post={ post }/> );
-        })}
-      </div>
-      <Pagination onChange={ handleChangePage } currentPage={ currentPage }/>
-    </>
+    <div className='content-area column full'>
+      <main className='site-main'>
+        <div className='grid portfoliogrid posts'>
+          { posts.map(post => {
+            return ( <Card key={ post.id } post={ post }/> );
+          }) }
+        </div>
+        <Pagination onChange={ handleChangePage } currentPage={ currentPage }/>
+      </main>
+    </div>
   );
 };
 

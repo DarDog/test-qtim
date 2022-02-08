@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/test-qtim/static/css/main.dae32cd4.css",
+    "main.js": "/test-qtim/static/js/main.e52b14f3.js",
+    "static/media/herr_von_muellerhoff_regular.svg": "/test-qtim/static/media/herr_von_muellerhoff_regular.8c04b5320b5a404d591d.svg",
+    "static/media/herr_von_muellerhoff_regular.eot": "/test-qtim/static/media/herr_von_muellerhoff_regular.292f9da91d73830cf80c.eot",
+    "static/media/herr_von_muellerhoff_regular.ttf": "/test-qtim/static/media/herr_von_muellerhoff_regular.ef8337cf7bf252bd3d7a.ttf",
+    "static/media/Oswaldbold.ttf": "/test-qtim/static/media/Oswaldbold.e14663fd1c8f361abf87.ttf",
+    "static/media/genericons-regular-webfont.svg": "/test-qtim/static/media/genericons-regular-webfont.7448079bcb615e9f5422.svg",
+    "static/media/genericons-regular-webfont.ttf": "/test-qtim/static/media/genericons-regular-webfont.ebc354a6d13f8ace4465.ttf",
+    "static/media/herr_von_muellerhoff_regular.woff": "/test-qtim/static/media/herr_von_muellerhoff_regular.21af0bab7c655aa20a07.woff",
+    "static/media/Oswaldbold.woff": "/test-qtim/static/media/Oswaldbold.a6629411ed70433d64ae.woff",
+    "static/media/herr_von_muellerhoff_regular.woff2": "/test-qtim/static/media/herr_von_muellerhoff_regular.89cd6c3df24dcf7b4b55.woff2",
+    "static/media/Oswaldbold.woff2": "/test-qtim/static/media/Oswaldbold.96ea71a33420f5ac095c.woff2",
+    "static/media/genericons-regular-webfont.woff": "/test-qtim/static/media/genericons-regular-webfont.be377ba5207f3ba23d29.woff",
+    "static/media/genericons-regular-webfont.eot": "/test-qtim/static/media/genericons-regular-webfont.50f97f0fa3af72b01413.eot",
+    "static/media/behance.eot?61221480": "/test-qtim/static/media/behance.02b76392df0db65de693.eot",
+    "static/media/behance.ttf?61221480": "/test-qtim/static/media/behance.b84de4999ee6994da8c6.ttf",
+    "static/media/behance.woff?61221480": "/test-qtim/static/media/behance.3c0a0b91c57c93d693c2.woff",
+    "static/media/behance.svg?61221480": "/test-qtim/static/media/behance.da5ee30fc844a28a318a.svg",
+    "index.html": "/test-qtim/index.html",
+    "main.dae32cd4.css.map": "/test-qtim/static/css/main.dae32cd4.css.map",
+    "main.e52b14f3.js.map": "/test-qtim/static/js/main.e52b14f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dae32cd4.css",
+    "static/js/main.e52b14f3.js"
+  ]
+}

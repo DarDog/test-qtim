@@ -16,8 +16,12 @@ export const PostsProvider = ({ children }) => {
       })
   }, []);
 
-  const getPosts = () => {
-    return JSON.parse(localStorage.getItem('posts'));
+  const getPostsByCurrentPage = (currentPage) => {
+    const posts = JSON.parse(localStorage.getItem('posts'));
+    const sliceStart = ( currentPage - 1 ) * 6;
+    const lastMovieIndex = currentPage * 6 ;
+
+    return posts.slice(sliceStart, lastMovieIndex);
   }
 
   const getPost = (postId) => {
@@ -30,7 +34,7 @@ export const PostsProvider = ({ children }) => {
       })
   };
 
-  const value = { currentPost, getPost }
+  const value = { currentPost, getPost, getPostsByCurrentPage }
 
   return (
     <PostsContext.Provider value={ value }>

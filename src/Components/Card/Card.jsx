@@ -1,20 +1,19 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-const Card = () => {
+const Card = ({ post }) => {
   return (
-    <article className='hentry'>
+    <article className='hentry card'>
       <div className='entry-thumbnail' id='primary'>
-        <a href='https://sa'>
+        <Link to={ `posts/${ post.id }` }>
           <img
-            src="https://sun9-79.userapi.com/impg/UNNsPwvOp3BZIil4jO23M9rSxpjC5hBjb3DqTw/2RerGfe7TJo.jpg?size=1400x934&quality=96&sign=b4e0c3a162765733fa367a2291d1926d&type=album"
-            alt="Заглушка" className='attachment-post-thumbnail size-post-thumbnail wp-post-image'/>
-        </a>
+            src={ post.image }
+            alt={ post.title } className='attachment-post-thumbnail size-post-thumbnail wp-post-image'/>
+        </Link>
         <h2 className='entry-title'>
-          <a href="">SUNSET BEACH</a>
+          <Link to={ `posts/${ post.id }` }>{ post.title }</Link>
         </h2>
-        <a href="" className='portfoliotype'>summer</a>
-        <a href="" className='portfoliotype'>woman</a>
-        <a href="" className='portfoliotype'>yellow</a>
+        <Link to={ `posts/${ post.id }` } className='portfoliotype'>{ post.preview }</Link>
       </div>
     </article>
   );

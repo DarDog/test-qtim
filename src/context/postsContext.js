@@ -29,9 +29,9 @@ export const PostsProvider = ({ children }) => {
   const value = { currentPost, getPost }
 
   return (
-    <PostsContext value={ value }>
+    <PostsContext.Provider value={ value }>
       { children }
-    </PostsContext>
+    </PostsContext.Provider>
   );
 };
 

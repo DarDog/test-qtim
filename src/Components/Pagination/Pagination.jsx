@@ -9,7 +9,7 @@ const Pagination = ({ onChange, currentPage }) => {
     onChange(currentPage - 1)
   }
 
-  const maxPages = Math.floor(JSON.parse(localStorage.getItem('posts')).length / 6);
+  const maxPages = Math.ceil(JSON.parse(localStorage.getItem('posts')).length / 6);
 
   return (
     <nav className='pagination'>

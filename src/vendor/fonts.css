@@ -12,3 +12,13 @@
   font-weight:normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Herr Von Muellerhoff';
+  src: url('./fonts/herr_von_muellerhoff_regular.eot');
+  src: url('./fonts/herr_von_muellerhoff_regular.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/herr_von_muellerhoff_regular.woff2') format('woff2'),
+  url('./fonts/herr_von_muellerhoff_regular.woff') format('woff'),
+  url('./fonts/herr_von_muellerhoff_regular.ttf') format('truetype'),
+  url('./fonts/herr_von_muellerhoff_regular.svg#herr_von_muellerhoff_regular') format('svg');
+}

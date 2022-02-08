@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test-qtim/static/css/main.dae32cd4.css",
-    "main.js": "/test-qtim/static/js/main.e52b14f3.js",
+    "main.js": "/test-qtim/static/js/main.b222e4a1.js",
     "static/media/herr_von_muellerhoff_regular.svg": "/test-qtim/static/media/herr_von_muellerhoff_regular.8c04b5320b5a404d591d.svg",
     "static/media/herr_von_muellerhoff_regular.eot": "/test-qtim/static/media/herr_von_muellerhoff_regular.292f9da91d73830cf80c.eot",
     "static/media/herr_von_muellerhoff_regular.ttf": "/test-qtim/static/media/herr_von_muellerhoff_regular.ef8337cf7bf252bd3d7a.ttf",
@@ -20,10 +20,10 @@
     "static/media/behance.svg?61221480": "/test-qtim/static/media/behance.da5ee30fc844a28a318a.svg",
     "index.html": "/test-qtim/index.html",
     "main.dae32cd4.css.map": "/test-qtim/static/css/main.dae32cd4.css.map",
-    "main.e52b14f3.js.map": "/test-qtim/static/js/main.e52b14f3.js.map"
+    "main.b222e4a1.js.map": "/test-qtim/static/js/main.b222e4a1.js.map"
   },
   "entrypoints": [
     "static/css/main.dae32cd4.css",
-    "static/js/main.e52b14f3.js"
+    "static/js/main.b222e4a1.js"
   ]
 }

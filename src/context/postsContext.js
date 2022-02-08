@@ -11,10 +11,14 @@ export const PostsProvider = ({ children }) => {
       .then(posts => {
         localStorage.setItem('posts', JSON.stringify(posts))
       })
-      .then(err => {
+      .catch(err => {
         console.error(err)
       })
   }, []);
+
+  const getPosts = () => {
+    return JSON.parse(localStorage.getItem('posts'));
+  }
 
   const getPost = (postId) => {
     mockupApi.getPostById(postId)

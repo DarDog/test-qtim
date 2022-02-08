@@ -525,14 +525,17 @@ a:active,a:focus {
 	overflow:hidden;
 	text-align:center;
 }
-.pagination a {
+.pagination button {
 	padding:5px 10px;
+	border: none;
+	line-height: normal;
 	margin-right:2px;
 	background:#ccc;
 	color:#fff;
 	text-decoration:blink;
+	transition: .3s;
 }
-.pagination a:hover,.pagination .current {
+.pagination button:hover,.pagination .current {
 	padding:5px 10px;
 	margin-right:2px;
 	background:#ffd700;

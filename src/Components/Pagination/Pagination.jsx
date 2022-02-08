@@ -1,11 +1,28 @@
 import React from 'react';
 
-const Pagination = () => {
+const Pagination = ({ onChange, currentPage }) => {
+  const showNextPage = () => {
+    onChange(currentPage + 1)
+  }
+
+  const showPreviousPage = () => {
+    onChange(currentPage - 1)
+  }
+
+  const maxPages = Math.floor(JSON.parse(localStorage.getItem('posts')).length / 6);
+
   return (
     <nav className='pagination'>
-      <span className='page-numbers current'>1</span>
-      <a href="" className='page-numbers'>2</a>
-      <a href="" className='next page-numbers'>Next</a>
+      { currentPage > 1 &&
+        <button onClick={ showPreviousPage } type='button' className='page-numbers'>Previous</button>
+      }
+      <span className='page-numbers current'>{ currentPage }</span>
+      { currentPage < maxPages &&
+      <>
+        <button onClick={ showNextPage } type='button' className='page-numbers'>{ currentPage + 1 }</button>
+        <button type='button' onClick={ showNextPage } className='next page-numbers'>Next</button>
+      </>
+      }
     </nav>
   );
 };

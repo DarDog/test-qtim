@@ -1,6 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { usePosts } from "../../hooks/usePosts";
+import { useParams } from 'react-router-dom';
 
 const Post = () => {
+  const [post, setPost] = useState({});
+  const { getCurrentPost } = usePosts();
+  const params = useParams();
+
+  useEffect(() => {
+    getCurrentPost(params.id)
+      .then(post => {
+        setPost(post);
+      })
+      .catch(err => {
+        console.error(err)
+      })
+  }, [])
+
   const handleSubmit = (evt) => {
     evt.preventDefault();
   }
@@ -12,10 +28,10 @@ const Post = () => {
           <article className='portfolio hentry'>
             <div className='entry-header'>
               <div className='entry-thumbnail'>
-                <img width='800' height='533' src="" alt=""/>
+                <img width='800' height='533' src={ post.image } alt={ post.title }/>
               </div>
-              <h2 className='entry-title'>title</h2>
-              <div className='entry-content'>description</div>
+              <h2 className='entry-title'>{ post.title }</h2>
+              <div className='entry-content'>{ post.description }</div>
             </div>
           </article>
         </main>
